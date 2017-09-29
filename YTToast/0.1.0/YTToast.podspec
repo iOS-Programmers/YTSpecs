@@ -25,17 +25,17 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yhjiang/YTToast.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'YTToast/Classes/**/*'
-    
+
   # s.resource_bundles = {
-  #   'YTToast' => ['YTToast/Assets/*.png']
+  #   'Pod' => ['Pod/Assets/**/*']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'CRToast', '~> 0.0.9'
   
   # s.dependency 'AFNetworking', '~> 2.3'
